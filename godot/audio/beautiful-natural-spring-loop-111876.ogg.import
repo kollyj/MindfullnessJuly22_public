@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/beautiful-natural-spring-loop-111876.ogg-d9cc8463e93a445f39d240b17bd50562.oggstr"
+
+[deps]
+
+source_file="res://audio/beautiful-natural-spring-loop-111876.ogg"
+dest_files=[ "res://.import/beautiful-natural-spring-loop-111876.ogg-d9cc8463e93a445f39d240b17bd50562.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
