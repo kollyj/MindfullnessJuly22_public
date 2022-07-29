@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sprites/CircleBlue.png" type="Texture" id=1]
+
+[sub_resource type="Curve" id=1]
+max_value = 1.5
+_data = [ Vector2( 0, 0.243182 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.814773 ), -4.37123, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=2]
+curve = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 1
+emission_sphere_radius = 200.0
+flag_disable_z = true
+gravity = Vector3( 0, 0, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale_random = 0.67
+scale_curve = SubResource( 2 )
+anim_offset = 0.84
+anim_offset_random = 0.6
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 296, 489 )
+amount = 3
+lifetime = 3.0
+explosiveness = 0.5
+process_material = SubResource( 3 )
+texture = ExtResource( 1 )
